@@ -1,0 +1,17 @@
+#Revision 1 BEGIN 2/7/2022
+##BEGIN Ashiq Ahmed here 2/7/2022
+
+import math #To get the value of pi
+
+#Ask user for the radius of the circle
+radius = float(input("Enter the radius of the circle: "))
+
+#Calculate the area of the circle
+area = math.pi * (radius * radius)
+
+#Output the area to the user
+print("r =", radius, "\nArea =", area)
+
+#Revision 1 END 2/7/2022
+##END Ashiq Ahmed here 2/7/2022
+#Omega Group/Manager: Ram Valud/Lead Tech: Michael Walker/Project greenwood321
