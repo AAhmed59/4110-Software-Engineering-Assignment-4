@@ -1,0 +1,12 @@
+#Revision 1 BEGIN 2/7/2022
+##BEGIN Ashiq Ahmed here 2/7/2022
+
+#Ask user for their input
+userInput = input("Please enter a string:\n")
+
+#Let the user know what they're input was and the class type is
+print("You entered", userInput, "and its type is", type(userInput))
+
+#Revision 1 END 2/7/2022
+##END Ashiq Ahmed here 2/7/2022
+#Omega Group/Manager: Ram Valud/Lead Tech: Michael Walker/Project greenwood321
