@@ -1,0 +1,18 @@
+#Revision 1 BEGIN 2/7/2022
+##BEGIN Ashiq Ahmed here 2/7/2022
+
+#Create an array of vowels
+vowels = ["a", "e", "i", "o", "u", "y"]
+
+#Ask user for input
+letter = input("Please enter a single letter: ")
+
+#Test to see if the letter is in the array or not
+if (letter in vowels): #Returns true if the letter is in the array of vowels
+    print("The letter", letter, "is a vowel.")
+else: #If false is returned, then the letter is not in the array of vowels
+    print("The letter", letter, "is not a vowel.")
+
+#Revision 1 END 2/7/2022
+##END Ashiq Ahmed here 2/7/2022
+#Omega Group/Manager: Ram Valud/Lead Tech: Michael Walker/Project greenwood321
