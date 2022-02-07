@@ -1,0 +1,11 @@
+#Revision 1 BEGIN 2/7/2022
+##BEGIN Ashiq Ahmed here 2/7/2022
+
+#Code needs to be all in one line
+#Inserts x^4 into the list for x+1 until x=20
+L = [pow(x, 4) for x in range(20)]
+print(L)
+
+#Revision 1 END 2/7/2022
+##END Ashiq Ahmed here 2/7/2022
+#Omega Group/Manager: Ram Valud/Lead Tech: Michael Walker/Project greenwood321
