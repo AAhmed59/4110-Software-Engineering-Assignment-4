@@ -1,0 +1,15 @@
+#Revision 1 BEGIN 2/7/2022
+##BEGIN Ashiq Ahmed here 2/7/2022
+
+#Using \n and \t to create the whitespace requested from customer
+#Splitting single print statement using whitespace to make it more readable
+print("Twinkle, twinkle, little star,\n" #Line 1
+      "\tHow I wonder what you are!\n" #Line 2 with tab space in front
+      "\t\tUp above the world so high,\n\n" #Line 3 with 2 tab spaces in front
+      "\t\tLike a diamond in the sky.\n" #Line 4 with 2 tab spaces in front
+      "Twinkle, twinkle, little star,\n" #Line 5
+      "\tHow I wonder what you are") #Line 6 with tab space in front
+
+#Revision 1 END 2/7/2022
+##END Ashiq Ahmed here 2/7/2022
+#Omega Group/Manager: Ram Valud/Lead Tech: Michael Walker/Project greenwood321
