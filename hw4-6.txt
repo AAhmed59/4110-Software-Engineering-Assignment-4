@@ -1,0 +1,60 @@
+#Revision 1 BEGIN 2/7/2022
+##BEGIN Ashiq Ahmed here 2/7/2022
+
+import random #Allows user to play roulette
+
+#LOG list to hold user choices
+LOG = []
+
+#List to hold all possible slots on the wheel
+wheel = ["RED 1", "BLACK 13", "RED 36", "BLACK 24", "RED 3", "BLACK 15", "RED 34",
+         "BLACK 22", "RED 5", "BLACK 17", "RED 32", "BLACK 20", "RED 7", "BLACK 11",
+         "RED 30", "BLACK 26", "RED 9", "BLACK 28", "0", "BLACK 2", "RED 14",
+         "BLACK 35", "RED 23", "BLACK 4", "RED 16", "BLACK 33", "RED 21",
+         "BLACK 6", "RED 18", "BLACK 31", "RED 19", "BLACK 8", "RED 12", "BLACK 29",
+         "RED 25", "BLACK 10", "RED 27", "00"]
+
+#Left side of wheel
+left = ["RED 1", "BLACK 13", "RED 36", "BLACK 24", "RED 3", "BLACK 15", "RED 34",
+         "BLACK 22", "RED 5", "BLACK 17", "RED 32", "BLACK 20", "RED 7", "BLACK 11",
+         "RED 30", "BLACK 26", "RED 9", "BLACK 28", "0"]
+
+#Right side of wheel
+right = ["BLACK 2", "RED 14", "BLACK 35", "RED 23", "BLACK 4", "RED 16", "BLACK 33",
+         "RED 21","BLACK 6", "RED 18", "BLACK 31", "RED 19", "BLACK 8", "RED 12",
+         "BLACK 29", "RED 25", "BLACK 10", "RED 27", "00"]
+
+#While loop to allow user to continue playing until they are done
+userC = ""
+while userC.upper() != "EXIT":
+    #Ask user for their choice
+    userC = input("Please choose a slot on the roulette wheel (Type exit to quit): ")
+    #Add their choice to the LOG list if it is a valid spot on the wheel
+    if (userC.upper() in wheel):
+        if (userC.upper() in left):
+            #Add user's input to the front of the list if it is on the left side of the wheel
+            LOG.insert(0, userC.upper())
+            chance = random.choice(wheel) #Find a random value from the wheel
+            #If the user's choice is equal to chance, then they win
+            if (userC.upper() == chance):
+                print("Congratulations, you win!")
+            else:
+                print("Sorry, you lost.")
+            
+        else:
+            #Otherwise add their input to the end of the list
+            LOG.append(userC.upper())
+            chance = random.choice(wheel) #Find a random value from the wheel
+            #If the user's choice is equal to chance, then they win
+            if (userC.upper() == chance):
+                print("Congratulations, you win!")
+            else:
+                print("Sorry, you lost.")
+
+#Let the user see their choices when they are done
+print(LOG)
+
+
+#Revision 1 END 2/7/2022
+##END Ashiq Ahmed here 2/7/2022
+#Omega Group/Manager: Ram Valud/Lead Tech: Michael Walker/Project greenwood321
