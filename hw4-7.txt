@@ -1,0 +1,32 @@
+#Revision 1 BEGIN 2/8/2022
+##BEGIN Ashiq Ahmed here 2/8/2022
+
+#Create 2 lists to hold guest names and when they were invited
+DinnerGuests = []
+InviteDate = []
+
+#Create a while loop to allow user to enter more than 1 name
+name = ""
+while (name.upper() != "EXIT"):
+    #Ask user for the guest names and invite dates
+    name = input("Enter the name of the guest (type exit to stop): ")
+    if (name.upper() == "EXIT"): #Break out of the loop when the user is done
+        break
+    date = input("Enter when they were invited: ")
+    #Enter the values into the correct list
+    DinnerGuests.append(name)
+    InviteDate.append(date)
+
+#Print the list of guests and dates to the user
+print("\nGuest\t\t\tInvite Date")
+for x in range(len(DinnerGuests)): #Loop to print out both lists
+    print("\n" + DinnerGuests[x], "\t\t", InviteDate[x])
+    #If the name of the guest is longer than 10 letter, it needs to go on a big tag
+    if (len(DinnerGuests[x]) > 10):
+        print(DinnerGuests[x], "goes on a big tag.")
+    else:
+        print(DinnerGuests[x], "goes on a small tag.")
+    
+#Revision 1 END 2/8/2022
+##END Ashiq Ahmed here 2/8/2022
+#Omega Group/Manager: Ram Valud/Lead Tech: Michael Walker/Project greenwood321
